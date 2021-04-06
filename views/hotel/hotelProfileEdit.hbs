@@ -1,0 +1,89 @@
+<div class="col-md-10 main">
+    <div class="container">
+        <div class="row mt-5 mb-5">
+            <span>Hotel/ My Profile / Edit</span>
+        </div>
+        <div class="row justify-content-center">
+
+            <div>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="hotelName">Name of Hotel</label>
+                            <input type="text" class="form-control" id="hotelName" value="{{hotelData.hotelname}}"
+                                name="hotelname" placeholder="Name of Hotel">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="hotelEmail">Email</label>
+                            <input type="email" class="form-control" id="hotelEmail" value="{{hotelData.email}}"
+                                name="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="hotelAddress1">Address 1</label>
+                        <input type="text" class="form-control" id="hotelAddress1" name="address1"
+                            placeholder="Address 1">
+                    </div>
+                    <div class="form-group">
+                        <label for="hotelAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="hotelAddress2" name="address2"
+                            placeholder="Address 2">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="hotelCity">Located City</label>
+                            <input type="text" class="form-control" id="hotelCity" name="city" placeholder="City">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="hotelState">State</label>
+                            <select id="hotelState" class="form-control" name="state">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="hotelPincode">Pin Code</label>
+                            <input type="text" class="form-control" id="hotelPincode" name="pincode"
+                                placeholder="Pincode">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="hotelContact">Contact Number</label>
+                            <input type="text" class="form-control" id="hotelContact" value="{{hotelData.contact}}"
+                                name="contact" placeholder="Contact Number">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="hotelAmenties">Amenties</label>
+                            <div class="multiselect">
+                                <div class="selectBox" onclick="showCheckboxes()">
+                                    <select>
+                                        <option>Select an option</option>
+                                    </select>
+                                    <div class="overSelect"></div>
+                                </div>
+                                <div id="checkboxes">
+                                    <label for="one">
+                                        <input type="checkbox" id="one" />First checkbox</label>
+                                    <label for="two">
+                                        <input type="checkbox" id="two" />Second checkbox</label>
+                                    <label for="three">
+                                        <input type="checkbox" id="three" />Third checkbox</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Update profile</button>
+                    <a href="#" class="btn btn-danger">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
